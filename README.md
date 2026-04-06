@@ -1,4 +1,4 @@
-# wintech2025_website
+# wintech2026_website
 To run locally
 
 ```
