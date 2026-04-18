@@ -1,26 +1,17 @@
 general_chairs:
-  - firstname: Prof. Tingjun
-    lastname: Chen
-    institution: Duke University, Durham, NC, USA
-  - firstname: Prof. Francesco
-    lastname: Gringoli
-    institution: Università degli Studi di Brescia, Brescia, Italy
-
-
-# poster_demo_chairs:
-#   - firstname: Vincenzo
-#     lastname: Sciancalepore
-#     institution: NEC, Germany
-#   - firstname: Vijay
-#     lastname: Shah
-#     institution: North Carolina State University, USA
+  - firstname: Prof. Ish
+    lastname: Jain
+    institution: Rensselaer Polytechnic Institute, Troy, NY, USA
+  - firstname: Dr. Eduardo
+    lastname: Baena
+    institution: Northeastern University, Boston, MA, USA
 
 publicity_chairs:
-   - firstname: Marco
-     lastname: Cominelli
-     institution: Politecnico di Milano, Milano, Italy
+   - firstname: Moinak
+     lastname: Ghoshal
+     institution: Northeastern University, Boston, MA, USA
 
 web_chairs:
-   - firstname: Lorenzo
-     lastname: Ghiro
-     institution: Università degli Studi di Brescia, Brescia, Italy
+   - firstname: Moinak
+     lastname: Ghoshal
+     institution: Northeastern University, Boston, MA, USA
