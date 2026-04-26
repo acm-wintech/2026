@@ -2,16 +2,20 @@ general_chairs:
   - firstname: Ish
     lastname: Jain
     institution: Rensselaer Polytechnic Institute, Troy, NY, USA
+    website: https://ishjain.github.io/
   - firstname: Eduardo
     lastname: Baena
     institution: Northeastern University, Boston, MA, USA
+    website: https://www.ebaena.com/
 
 publicity_chairs:
    - firstname: Moinak
      lastname: Ghoshal
      institution: Northeastern University, Boston, MA, USA
+     website: https://sites.google.com/view/moinak-ghoshal/home
 
 web_chairs:
    - firstname: Moinak
      lastname: Ghoshal
      institution: Northeastern University, Boston, MA, USA
+     website: https://sites.google.com/view/moinak-ghoshal/home

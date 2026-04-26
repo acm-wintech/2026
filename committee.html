@@ -22,7 +22,7 @@
 
         <h3>Workshop Co-chairs</h3>
         {% for chair in site.data.chairs.general_chairs %}
-        {{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}<br/>
+        <a href="{{ chair.website }}">{{ chair.firstname }} {{ chair.lastname }}</a>, {{ chair.institution }}<br/>
         {% endfor %}
 
         <!-- <h3>Demo and Poster Co-chairs</h3>
@@ -32,7 +32,7 @@
 
         <h3>Publicity and Web Chair</h3>
         {% for chair in site.data.chairs.publicity_chairs %}
-        {{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}<br/>
+        <a href="{{ chair.website }}">{{ chair.firstname }} {{ chair.lastname }}</a>, {{ chair.institution }}<br/>
         {% endfor %}
 
         <h3>Technical Program Committee</h3>
@@ -40,11 +40,11 @@
 
 
         <h3>Steering Committee</h3>
-        Dimitrios Koutsonikolas, Northeastern University (Chair)</br>
-        Stefano Basagni, Northeastern University</br>
-        Tommaso Melodia, Northeastern University</br>
-        Chunyi Peng, Purdue University</br>
-        Ilenia Tinnirello, University of Palermo</br>
+        <a href="https://ece.northeastern.edu/fac-ece/dkoutsonikolas//">Dimitrios Koutsonikolas</a>, Northeastern University (Chair)</br>
+        <a href="https://ece.northeastern.edu/fac-ece/basagni/">Stefano Basagni</a>, Northeastern University</br>
+        <a href="https://ece.northeastern.edu/wineslab/tmelodia.php/">Tommaso Melodia</a>, Northeastern University</br>
+        <a href="https://www.cs.purdue.edu/homes/chunyi/">Chunyi Peng</a>, Purdue University</br>
+        <a href="https://www.unipa.it/persone/docenti/t/ilenia.tinnirello/">Ilenia Tinnirello</a>, University of Palermo</br>
 
     </div>
 </section>
