@@ -36,7 +36,9 @@
         {% endfor %}
 
         <h3>Technical Program Committee</h3>
-        <p><em>To be announced.</em></p>
+        {% for member in site.data.tpc.members %}
+        {{ member.name }}, {{ member.institution }}<br/>
+        {% endfor %}
 
 
         <h3>Steering Committee</h3>
