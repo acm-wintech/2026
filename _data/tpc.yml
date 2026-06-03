@@ -3,10 +3,14 @@ members:
     institution: HPE
   - name: Sarath Babu
     institution: Iowa State University
+  - name: Bastian Bloessl
+    institution: TU Darmstadt
   - name: Joshua Ofori Boateng
     institution: Iowa State University
   - name: Leonardo Bonati
     institution: Northeastern University
+  - name: Giuseppe Caso
+    institution: Karlstad University
   - name: Nakjung Choi
     institution: Nokia Bell Labs
   - name: Marco Cominelli
@@ -15,14 +19,26 @@ members:
     institution: Northeastern University
   - name: Rahman Doost-Mohammady
     institution: Rice University
+  - name: Serge Fdida
+    institution: Sorbonne University & CNRS
   - name: Claudio Fiandrino
     institution: IMDEA Networks
   - name: Fraida Fund
     institution: NYU
+  - name: Lorenzo Ghiro
+    institution: University of Brescia
   - name: Ismail Guvenc
     institution: North Carolina State University
+  - name: Matthias Hollick
+    institution: TU Darmstadt
+  - name: Florian Kaltenberger
+    institution: Eurecom
   - name: Francesca Meneghello
     institution: University of Padova
+  - name: Marco Mezzavilla
+    institution: Politecnico di Milano
+  - name: Tobias Meuser
+    institution: TU Darmstadt
   - name: Parth Pathak
     institution: George Mason University
   - name: Michele Polese
