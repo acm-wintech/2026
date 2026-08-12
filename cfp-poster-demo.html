@@ -17,48 +17,39 @@
 <body data-spy="scroll" data-target="#site-nav">
     {% include header.html %}
 
-    <section id="cfp" class="section cfp" style="display: block;">
+    <section id="cfp-poster-demo" class="section cfp" style="display: block;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">CALL FOR DEMOS</h3>
+                    <h3 class="section-title">CALL FOR POSTERS AND DEMOS</h3>
                 </div>
             </div>
 
-            <p>ACM WiNTECH continues its established tradition of hosting a demos and 
-            posters session. We welcome proposals for demonstrations of novel work 
-            in wireless network testbeds, measurement platforms and results, and 
-            innovative prototypes. The areas of interest overlap those listed in the 
-            workshop Call for Papers. The innovations showcased can be at any layer 
-            of the protocol stack, from physical to application. However, we 
-            particularly encourage demonstrations and posters that span over 
-            multiple layers. Wireless networking must be the key topic. Posters may 
-            describe work in progress, while the session will offer an excellent 
-            opportunity to receive feedback and discuss early research. We emphasize 
-            that the demos and posters session is not a forum to display commercial 
-            products.</p>
+            <p align="justify">We are inviting researchers to present a poster or demo of their work at WiNTECH 2026. This is an excellent opportunity to share work in progress, receive feedback from the community, and engage with fellow researchers working on experimental wireless networking.</p>
 
-            <p>Each submission must be a single PDF file no longer than two (2) pages 
-            in length (including figures, tables, and references), using two-column 
-            format, 10-point size or greater and in PDF format following the same 
-            format as the regular papers. Submissions must include the author name 
-            and affiliation. All demo titles should start with "Demo:". Papers must 
-            include the authors' name and affiliation.</p>
+            <p align="justify">Demos and poster submissions should consist of a <strong>one-page abstract</strong> in the same format as regular WiNTECH papers, describing the demonstration plan or the outline of the poster content.</p>
 
-            <p>All submissions should be sent to: acmwintech@gmail.com</p>
+            <p id="listing" align="justify"><b>SUBMISSION GUIDELINES</b></p>
+            <ul>
+                <li>The title must bear a <strong>"Poster:"</strong> or <strong>"Demo:"</strong> prefix.</li>
+                <li>Page limit: <strong>1 page</strong> including references, with 10-point font.</li>
+                <li>Use the same ACM format as regular papers. Templates are available <a href="http://www.acm.org/publications/proceedings-template" target="_blank"><b><u>here</u></b></a>. In LaTeX, use <code>\documentclass[sigconf, 10pt]{acmart}</code>.</li>
+                <li>Submit via the submission portal: <a href="{{ site.data.conference.submission_portal }}" target="_blank"><b><u>{{ site.data.conference.submission_portal }}</u></b></a>.</li>
+            </ul>
 
+            <br>
 
             <p><b>IMPORTANT DATES:</b><br/>
-<!--            TODO: update dates-->
-            <p>Submission deadline: August 7th, 2023 <del>July 21st, 2023</del></p>
-            <p>Notification to authors: August 9th, 2023</p>
-            <p>Workshop: October 6th, 2023</p>
+            Demo/Poster Submission: August 25<sup>th</sup> 2026 AoE<br/>
+            Acceptance Notification: August 26<sup>th</sup> 2026<br/>
+            Camera-ready: August 30<sup>th</sup> 2026<br/>
+            Workshop: {{ site.data.conference.dates }}</p>
+
         </div>
     </section>
 
     <!-- import navigation bar and header -->
     <script src="//code.jquery.com/jquery.min.js"></script>
-
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 </body>
