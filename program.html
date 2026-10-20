@@ -17,12 +17,16 @@
     <style>
         .program-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
         .program-table td { padding: 8px 12px; vertical-align: top; border-bottom: 1px solid #eee; }
-        .program-table td:first-child { white-space: nowrap; width: 110px; color: #555; font-size: 0.9em; }
+        .program-table td:first-child { white-space: nowrap; width: 140px; color: #555; font-size: 0.9em; }
         .program-table tr.break-row td { background: #f5f5f5; font-style: italic; }
         .program-table tr.session-row td:last-child { font-weight: bold; color: #333; }
         .session-block { margin-bottom: 30px; }
         .session-block h4 { border-bottom: 2px solid #ddd; padding-bottom: 6px; margin-bottom: 14px; }
-        .tot-block { background: #fffbf0; border-left: 4px solid #e0a800; padding: 10px 14px; margin-bottom: 10px; }
+        .tot-block { background: #fffbf0; border-left: 4px solid #e0a800; padding: 10px 14px; }
+        .panelist-card { text-align: center; margin-bottom: 20px; }
+        .panelist-card img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 8px; display: block; margin-left: auto; margin-right: auto; }
+        .panelist-placeholder { width: 120px; height: 120px; border-radius: 50%; background: #ddd; margin: 0 auto 8px; display: flex; align-items: center; justify-content: center; font-size: 2em; color: #aaa; }
+        .panelist-card p { font-size: 0.88em; line-height: 1.4; }
     </style>
 </head>
 <body data-spy="scroll" data-target="#site-nav">
@@ -40,94 +44,155 @@
             <!-- Schedule Overview -->
             <table class="program-table">
                 <tr>
-                    <td>8:30&ndash;8:40</td>
+                    <td>8:30&ndash;8:40 AM</td>
                     <td>Welcome and Opening Remarks</td>
                 </tr>
-                <tr>
-                    <td>8:40&ndash;9:40</td>
-                    <td><strong>Special 20th Anniversary Keynote</strong><br>
-                        <em>Mahesh K. Marina (University of Edinburgh)</em><br>
-                        30 min talk + 5 min Q&amp;A</td>
+                <tr class="session-row">
+                    <td>8:40&ndash;9:40 AM</td>
+                    <td>20th Anniversary Panel: 20 Years of Wireless Experimentation</td>
                 </tr>
-                <tr>
-                    <td>9:40&ndash;10:30</td>
-                    <td><strong>Panel: 20 Years of Wireless Experimentation</strong></td>
+                <tr class="session-row">
+                    <td>9:40&ndash;10:40 AM</td>
+                    <td>Session 1: Open RAN and AI-RAN Systems</td>
                 </tr>
                 <tr class="break-row">
-                    <td>10:30&ndash;11:00</td>
+                    <td>10:40&ndash;11:00 AM</td>
                     <td>Coffee Break</td>
                 </tr>
                 <tr>
-                    <td>11:00&ndash;11:15</td>
+                    <td>11:00&ndash;11:15 AM</td>
                     <td>
                         <div class="tot-block">
-                            <strong>&#127942; Test-of-Time Talk (2016 Winner)</strong><br>
-                            <em>srsLTE: An Open-Source Platform for LTE Evolution and Experimentation</em><br>
-                            Ismael Gomez-Miguelez, Andres Garcia-Saavedra, Paul D. Sutton, Pablo Serrano, Cristina Cano, Douglas J. Leith
+                            <strong>&#127942; Test-of-Time Talk &mdash; Erik Luther</strong>
                         </div>
                     </td>
                 </tr>
                 <tr class="session-row">
-                    <td>11:15&ndash;12:15</td>
-                    <td>Session 1: Open RAN and AI-RAN Systems</td>
-                </tr>
-                <tr>
-                    <td>12:00&ndash;12:15</td>
-                    <td>Demo Lightning Pitches / Transition to Lunch</td>
-                </tr>
-                <tr class="break-row">
-                    <td>12:15&ndash;1:30</td>
-                    <td>Lunch</td>
-                </tr>
-                <tr class="session-row">
-                    <td>12:30&ndash;1:30</td>
-                    <td>Demo Session <em>(concurrent with lunch)</em></td>
-                </tr>
-                <tr class="session-row">
-                    <td>1:30&ndash;2:30</td>
+                    <td>11:15 AM&ndash;12:15 PM</td>
                     <td>Session 2: Wireless Network Measurement and Analytics</td>
                 </tr>
+                <tr class="break-row">
+                    <td>12:15&ndash;1:30 PM</td>
+                    <td>Lunch + Demo Session</td>
+                </tr>
+                <tr>
+                    <td>1:30&ndash;2:30 PM</td>
+                    <td><strong>Special 20th Anniversary Keynote &mdash; Mahesh Marina</strong></td>
+                </tr>
                 <tr class="session-row">
-                    <td>2:30&ndash;3:30</td>
+                    <td>2:30&ndash;3:30 PM</td>
                     <td>Session 3: Wireless PHY Prototyping, CSI, and Localization</td>
                 </tr>
                 <tr class="break-row">
-                    <td>3:30&ndash;4:00</td>
+                    <td>3:30&ndash;4:00 PM</td>
                     <td>Coffee Break</td>
                 </tr>
                 <tr class="session-row">
-                    <td>4:00&ndash;5:00</td>
+                    <td>4:00&ndash;5:00 PM</td>
                     <td>Session 4: Experimental 5G Platforms and Emerging Services</td>
                 </tr>
                 <tr>
-                    <td>5:00&ndash;5:10</td>
-                    <td>Closing Remarks / Awards</td>
+                    <td>5:00&ndash;5:10 PM</td>
+                    <td>Closing Remarks</td>
                 </tr>
             </table>
 
             <hr/>
 
+            <!-- Panel Section -->
+            <div class="session-block">
+                <h4>20th Anniversary Panel: 20 Years of Wireless Experimentation <small>(8:40&ndash;9:40 AM)</small></h4>
+                <div class="row" style="margin-top:20px;">
+                    <div class="col-md-1 hidden-sm hidden-xs"></div>
+                    <div class="col-xs-6 col-sm-4 col-md-2">
+                        <div class="panelist-card">
+                            <img src="img/speakers/marina.jpg" alt="Mahesh K. Marina">
+                            <p><strong>Mahesh K. Marina</strong><br>Professor<br>University of Edinburgh</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-2">
+                        <div class="panelist-card">
+                            <img src="img/speakers/bahl.jpg" alt="Victor Bahl">
+                            <p><strong>Victor Bahl</strong><br>Technical Fellow &amp; CTO<br>Microsoft Research</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-2">
+                        <div class="panelist-card">
+                            <img src="img/speakers/widmer.jpg" alt="Joerg Widmer">
+                            <p><strong>Joerg Widmer</strong><br>Research Director<br>IMDEA Networks Institute</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-2">
+                        <div class="panelist-card">
+                            <div class="panelist-placeholder">DK</div>
+                            <p><strong>Dimitrios Koutsonikolas</strong><br>Professor<br>Northeastern University</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-2">
+                        <div class="panelist-card">
+                            <img src="img/speakers/sjlee.jpg" alt="Sung-Ju Lee">
+                            <p><strong>Sung-Ju Lee</strong><br>Professor (IEEE Fellow)<br>KAIST</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 hidden-sm hidden-xs"></div>
+                </div>
+            </div>
+
             <!-- Session 1 -->
             <div class="session-block">
-                <h4>Session 1: Open RAN and AI-RAN Systems <small>(11:15&ndash;12:15)</small></h4>
-
+                <h4>Session 1: Open RAN and AI-RAN Systems <small>(9:40&ndash;10:40 AM)</small></h4>
                 <table border="0" cellspacing="10" valign="top">
                     <tr><td><ulx>
                         <br>
-                        <b>A Framework for Experimental Dense vRAN Deployments</b><br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844162" target="_blank">A Framework for Experimental Dense vRAN Deployments</a></b><br>
                         <font size="3">Romain Beurdouche, Raymond Knopp (EURECOM)</font><br>
 
                         <br>
-                        <b>SlotScope: Slot-Aligned Multi-Layer Observability for CPU-Resident AI-RAN Workload Assessment</b><br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844163" target="_blank">SlotScope: Slot-Aligned Multi-Layer Observability for CPU-Resident AI-RAN Workload Assessment</a></b><br>
                         <font size="3">Ali K. Abbas, Azuka Chiejina, Vijay K. Shah (North Carolina State University)</font><br>
 
                         <br>
-                        <b>Bringing dApps to OCUDU: An E3 Controller for Real-Time Open RAN Intelligence</b><br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844165" target="_blank">Bringing dApps to OCUDU: An E3 Controller for Real-Time Open RAN Intelligence</a></b><br>
                         <font size="3">Angelo Feraudo, Ravis Shirkhani, Stefano Maxenti, Andrea Lacava, Michele Polese, Tommaso Melodia (Northeastern University)</font><br>
 
                         <br>
-                        <b>Performance Characterization of dApps in Open Radio Access Networks</b><br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844166" target="_blank">Performance Characterization of dApps in Open Radio Access Networks</a></b><br>
                         <font size="3">Conrado Boeira, Eduardo Baena, Andrea Lacava, Tommaso Melodia, Dimitrios Koutsonikolas (Northeastern University); Israat Haque (Dalhousie University)</font><br>
+                        <br>
+                    </ulx></td></tr>
+                </table>
+            </div>
+
+            <!-- Test-of-Time Talk -->
+            <div class="session-block">
+                <h4>&#127942; Test-of-Time Talk <small>(11:00&ndash;11:15 AM)</small></h4>
+                <div class="tot-block">
+                    <p><strong>Speaker: Erik Luther</strong></p>
+                    <p><em>srsLTE: An Open-Source Platform for LTE Evolution and Experimentation</em> (WiNTECH 2016)<br>
+                    Ismael Gomez-Miguelez, Andres Garcia-Saavedra, Paul D. Sutton, Pablo Serrano, Cristina Cano, Douglas J. Leith</p>
+                </div>
+            </div>
+
+            <!-- Session 2 -->
+            <div class="session-block">
+                <h4>Session 2: Wireless Network Measurement and Analytics <small>(11:15 AM&ndash;12:15 PM)</small></h4>
+                <table border="0" cellspacing="10" valign="top">
+                    <tr><td><ulx>
+                        <br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844161" target="_blank">App-Based Performance Characterization of Cellular and Wi-Fi Networks in Dense Stadium Deployments</a></b><br>
+                        <font size="3">Hardani Ismu Nabil (Sebelas Maret University); Muhammad I. Rochman, S.M. Haider Ali Shuvo, Joshua Roy Palathinkal, Monisha Ghosh (University of Notre Dame)</font><br>
+
+                        <br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844164" target="_blank">Three Phones, Nine Afternoons: An Experience Report on Multi-Operator 5G Walk-Testing in Manhattan</a></b><br>
+                        <font size="3">Wonyul Choi (Academy for Mathematics, Science &amp; Engineering); Ahan Kak (Nokia Bell Labs)</font><br>
+
+                        <br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844172" target="_blank">Private 5G vs. Wi-Fi in the Enterprise: A Measurement Study of Tunability and QoE</a></b><br>
+                        <font size="3">Moinak Ghoshal, Dimitrios Koutsonikolas (Northeastern University); Shivang Aggarwal, Mohamed Ibrahim, Puneet Sharma (HPE Labs); K. K. Ramakrishnan (University of California, Riverside)</font><br>
+
+                        <br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844175" target="_blank">MINT: Modeling GenAI Impact on Network Traffic</a></b><br>
+                        <font size="3">Andrew Nguyen, Samson Kempiak, Koushik Kar, Ish Kumar Jain (RPI); Agrim Gupta (Samsung Research America)</font><br>
                         <br>
                     </ulx></td></tr>
                 </table>
@@ -135,24 +200,23 @@
 
             <!-- Demo Session -->
             <div class="session-block">
-                <h4>Demo Session <small>(12:30&ndash;1:30, concurrent with lunch)</small></h4>
-
+                <h4>Demo Session <small>(12:15&ndash;1:30 PM, concurrent with lunch)</small></h4>
                 <table border="0" cellspacing="10" valign="top">
                     <tr><td><ulx>
                         <br>
-                        <b>Demo: A Dense vRAN Deployment to Challenge Computing</b><br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844795" target="_blank">Demo: A Dense vRAN Deployment to Challenge Computing</a></b><br>
                         <font size="3">Romain Beurdouche, Raymond Knopp (EURECOM)</font><br>
 
                         <br>
-                        <b>Demo: A Flexible, Declarative Framework for Deploying and Reproducing 6G Experiments</b><br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844796" target="_blank">Demo: A Flexible, Declarative Framework for Deploying and Reproducing 6G Experiments</a></b><br>
                         <font size="3">Ziyad Mabrouk, Damien Saucez, Mohammadbagher Tavassoli Kejani (Inria); Tariro Mukute (University of Cape Town)</font><br>
 
                         <br>
-                        <b>Demo: Enabling Interoperability of dApps over Heterogeneous Radio Access Networks</b><br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844797" target="_blank">Demo: Enabling Interoperability of dApps over Heterogeneous Radio Access Networks</a></b><br>
                         <font size="3">Andrea Lacava, Angelo Feraudo, Michele Polese, Tommaso Melodia (Northeastern University)</font><br>
 
                         <br>
-                        <b>Demo: cuSat as the DVB-S2X Backhaul of a 5G RAN</b><br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844798" target="_blank">Demo: cuSat as the DVB-S2X Backhaul of a 5G RAN</a></b><br>
                         <font size="3">Maxime Elkael, Michele Polese, Tommaso Melodia (Northeastern University)</font><br>
 
                         <br>
@@ -163,48 +227,32 @@
                 </table>
             </div>
 
-            <!-- Session 2 -->
+            <!-- Keynote -->
             <div class="session-block">
-                <h4>Session 2: Wireless Network Measurement and Analytics <small>(1:30&ndash;2:30)</small></h4>
-
-                <table border="0" cellspacing="10" valign="top">
-                    <tr><td><ulx>
-                        <br>
-                        <b>App-Based Performance Characterization of Cellular and Wi-Fi Networks in Dense Stadium Deployments</b><br>
-                        <font size="3">Hardani Ismu Nabil (Sebelas Maret University); Muhammad I. Rochman, S.M. Haider Ali Shuvo, Joshua Roy Palathinkal, Monisha Ghosh (University of Notre Dame)</font><br>
-
-                        <br>
-                        <b>Three Phones, Nine Afternoons: An Experience Report on Multi-Operator 5G Walk-Testing in Manhattan</b><br>
-                        <font size="3">Wonyul Choi (Academy for Mathematics, Science &amp; Engineering); Ahan Kak (Nokia Bell Labs)</font><br>
-
-                        <br>
-                        <b>Private 5G vs. Wi-Fi in the Enterprise: A Measurement Study of Tunability and QoE</b><br>
-                        <font size="3">Moinak Ghoshal, Dimitrios Koutsonikolas (Northeastern University); Shivang Aggarwal, Mohamed Ibrahim, Puneet Sharma (HPE Labs); K. K. Ramakrishnan (University of California, Riverside)</font><br>
-
-                        <br>
-                        <b>MINT: Modeling GenAI Impact on Network Traffic</b><br>
-                        <font size="3">Andrew Nguyen, Samson Kempiak, Koushik Kar, Ish Kumar Jain (RPI); Agrim Gupta (Samsung Research America)</font><br>
-                        <br>
-                    </ulx></td></tr>
-                </table>
+                <h4>Special 20th Anniversary Keynote <small>(1:30&ndash;2:30 PM)</small></h4>
+                <p align="justify">
+                    <img src="img/speakers/marina.jpg" style="width:150px;height:auto;float:left;margin-right:2%;margin-bottom:1%;" alt="Mahesh K. Marina">
+                    <strong>Mahesh K. Marina, University of Edinburgh</strong><br><br>
+                    <strong>Bio:</strong> Mahesh K. Marina is a Professor (Personal Chair of Networked Systems) in the School of Informatics at the University of Edinburgh, where he leads the Networked Systems Group. His research spans networked systems broadly, with current interests in disaggregated and software-centric mobile networking, AI for networking, LEO satellite communications, and sustainable AI infrastructure. He has held visiting positions at Johns Hopkins University, ETH Zurich, and Ofcom (the UK&rsquo;s telecommunications regulator), and was a Turing Fellow at the Alan Turing Institute (2018&ndash;2023). He served as Director of the Institute for Computing Systems Architecture at Edinburgh from 2018 to 2022. He received his PhD in Computer Science from SUNY Stony Brook. He is a Fellow of the IEEE, a Fellow of the Royal Society of Edinburgh, and an ACM Distinguished Member.
+                </p>
+                <div style="clear:both;"></div>
             </div>
 
             <!-- Session 3 -->
             <div class="session-block">
-                <h4>Session 3: Wireless PHY Prototyping, CSI, and Localization <small>(2:30&ndash;3:30)</small></h4>
-
+                <h4>Session 3: Wireless PHY Prototyping, CSI, and Localization <small>(2:30&ndash;3:30 PM)</small></h4>
                 <table border="0" cellspacing="10" valign="top">
                     <tr><td><ulx>
                         <br>
-                        <b>BE-CSI: Unlocking 320 MHz CSI on Commodity Wi-Fi 7 Devices</b><br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844167" target="_blank">BE-CSI: Unlocking 320 MHz CSI on Commodity Wi-Fi 7 Devices</a></b><br>
                         <font size="3">Stefano Fontana, Francesco Gringoli (University of Brescia &amp; CNIT); Jakob Link, Matthias Hollick (TU Darmstadt); Francesca Meneghello, Francesco Restuccia (Northeastern University)</font><br>
 
                         <br>
-                        <b>BRISC: A Dataset of Channel Measurements at 5 GHz With a Reconfigurable Intelligent Surface</b><br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844168" target="_blank">BRISC: A Dataset of Channel Measurements at 5 GHz With a Reconfigurable Intelligent Surface</a></b><br>
                         <font size="3">Mattia Piana, Anna Valeria Guglielmi, Stefano Tomasin (University of Padova); Giovanni Angelo Alghisi, Giovanni Perin, Francesco Gringoli (University of Brescia &amp; CNIT)</font><br>
 
                         <br>
-                        <b>BCMSDR: Breaking the Cost Barrier of High-Rate SDRs Using Commercial Wi-Fi Hardware</b><br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844169" target="_blank">BCMSDR: Breaking the Cost Barrier of High-Rate SDRs Using Commercial Wi-Fi Hardware</a></b><br>
                         <font size="3">Jakob Link, Matthias Hollick (TU Darmstadt); Stefano Fontana, Denis Festa, Francesco Gringoli (University of Brescia &amp; CNIT)</font><br>
 
                         <br>
@@ -217,24 +265,23 @@
 
             <!-- Session 4 -->
             <div class="session-block">
-                <h4>Session 4: Experimental 5G Platforms and Emerging Services <small>(4:00&ndash;5:00)</small></h4>
-
+                <h4>Session 4: Experimental 5G Platforms and Emerging Services <small>(4:00&ndash;5:00 PM)</small></h4>
                 <table border="0" cellspacing="10" valign="top">
                     <tr><td><ulx>
                         <br>
-                        <b>Opening the Black Box: Zero-Touch Conformance and Security Testing of Commercial O-RUs</b><br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844170" target="_blank">Opening the Black Box: Zero-Touch Conformance and Security Testing of Commercial O-RUs</a></b><br>
                         <font size="3">Linqi Xiao, Abhishek Bhattacharyya, Moojan Kamalzadeh, Venkateswarlu Gudepu, Larry J. Horner, Andrea Fumagalli (University of Texas at Dallas)</font><br>
 
                         <br>
-                        <b>cuSat: An Open GPU-Based DVB-S2X Feeder Link for Cellular-Satellite Convergence</b><br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844173" target="_blank">cuSat: An Open GPU-Based DVB-S2X Feeder Link for Cellular-Satellite Convergence</a></b><br>
                         <font size="3">Maxime Elkael, Michele Polese, Tommaso Melodia (Northeastern University)</font><br>
 
                         <br>
-                        <b>Scripting Traffic, Aligning Power: A 5G Testbed Integrating gNB Activity and Commercial UE Power</b><br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844174" target="_blank">Scripting Traffic, Aligning Power: A 5G Testbed Integrating gNB Activity and Commercial UE Power</a></b><br>
                         <font size="3">Haochen Wang, Aaron Tartz, Adel Heidari, Agrim Gupta, Dinesh Bharadia (UC San Diego); Kotturi Sai Prasanth, Radha Krishna Ganti (IIT Madras)</font><br>
 
                         <br>
-                        <b>5G Multicast-Broadcast On Air: An Open SDR Testbed and Experimental Characterization of MBS</b><br>
+                        <b><a href="https://doi.org/10.1145/3831662.3844176" target="_blank">5G Multicast-Broadcast On Air: An Open SDR Testbed and Experimental Characterization of MBS</a></b><br>
                         <font size="3">Rajendra Paudyal, Al Nahian Bin Emran, Rajendra Upadhyay, Duminda Wijesekera (George Mason University); Arupjyoti Bhuyan (Idaho National Laboratories)</font><br>
                         <br>
                     </ulx></td></tr>
@@ -244,7 +291,6 @@
         </div>
     </section>
 
-    <!-- import navigation bar and header -->
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
